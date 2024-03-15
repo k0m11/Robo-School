@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20,16,36,255);
+    padding: 30px;
+}
+.header-logo {
+    line-height: 60px;
+}
+.header-links a {
+    color: white;
+    font-family: Jost;
+    line-height: 60px;
+    font-size: 20px;
+    margin-inline: 20px;
+}
+.header-phone a{
+    color: white;
+    line-height: 60px;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.intro-page {
+    font-family: Jost;
+    color: white;
+    display: flex;
+    background-color: rgb(20,16,36,255);
+    height: 660px;
+    justify-content: end;
+}
+.intro-page__text {
+    /* place-self: center;  Крутая тема для центрирования по вертикали */
+    margin-top: 210px;
+    max-width: 500px;
+}
+.intro-page__text h1{
+    font-size: 70px;
+}
+.intro-page__text p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.intro-page__img img {
+    height: 100%;
+    margin-left: 170px;
+}
+.intro-page__img {
+    margin-right: 10%;
+}
+.intro-page__text button {
+    background-color: rgb(213,32,39,255);
+    border: none;
+    width: 255px;
+    height: 80px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.inline-space {
+    display: flex;
+    justify-content: center;
+}
+
+.stats-page {
+    margin-top: 140px;
+    font-family: Jost;
+    margin-bottom: 200px;
+}
+.stats-page__text {
+    font-size: 30px;
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+.stats-page__stats {
+    display: flex;
+}
+.stats-page__block {
+    font-size: 18px;
+    max-width: 260px;
+    margin-right: 30px;
+}
+.stats-page__block h1 {
+    font-size: 70px;
+    color: rgb(213,32,39,255);
+}
+
+.advantages {
+    font-family: Jost;
+    margin-bottom: 300px;
+}
+.advantages__text {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.advantages__parts {
+    display: flex;
+}
+.advantages__block {
+    max-width: 340px;
+    margin-right: 50px;
+}
+.advantages__block strong {
+    font-size: 24px;
+}
+.advantages__block p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.advantages__block span {
+    background-color: rgb(231, 231, 231);
+    padding-inline: 9px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.trainers {
+    font-family: Jost;
+    margin-bottom: 200px;
+}
+.trainers__top-sign {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.trainers__swiper {
+    display: flex;
+}
+.trainers__block {
+    margin-inline: 20px;
+}
+.trainers__photo {
+}
+.trainers__name {
+    margin-top: 15px;
+    font-size: 24px;
+}
+.trainers__about {
+    color: rgb(151, 151, 151);
+    margin-top: 10px;
+    font-size: 18px;
+}
+.trainers__button {
+    color: rgb(213,32,39,255);
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.bundles {
+    font-family: Jost;
+    margin-bottom: 200px;
+}
+.bundles__text {
+    font-size: 50px;
+}
+.bundles__parts {
+    margin-top: 80px;
+    display: flex;
+}
+.bundles__block {
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgb(201, 201, 201);
+    text-align: center;
+    height: 450px;
+    width: 360px;
+    margin-right: 30px;
+}
+.bundles__name {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.bundles__cost {
+    margin-top: 70px;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.bundles__description {
+    margin: 0 auto;
+    max-width: 250px;
+    color: rgb(146, 146, 146);
+    font-size: 18px;
+}
+.bundles__button {
+    margin-top: 80px;
+    border-radius: 5px;
+    padding: 25px 54px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(213,32,39,255);
+    border: none;
+    cursor: pointer;
+}
+
+.course-inline {
+    font-family: Jost;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(213,32,39,255);
+}
+.course {
+    color: white;
+    display: flex;
+}
+.course__text {
+    margin-right: 150px;
+}
+.course__text h1 {
+    font-size: 36px;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+.course__text p {
+    font-size: 20px;
+}
+.course__forms input{
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+    width: 476px;
+    padding: 20px;
+    display: block;
+}
+.course__forms button {
+    cursor: pointer;
+    width: 520px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    padding-bottom: 50px;
+    padding-inline: 20px;
+    padding-top: 50px;
+    font-family: Jost;
+    background-color: rgb(20,16,36,255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logos {
+}
+.footer__logos p{
+    margin-top: 10px;
+}
+.footer__phone {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
