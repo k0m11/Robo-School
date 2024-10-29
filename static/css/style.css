@@ -9,6 +9,7 @@ html {
 a {
     text-decoration: none;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,6 +25,10 @@ header {
     line-height: 60px;
     font-size: 20px;
     margin-inline: 20px;
+    transition: ease 200ms;
+}
+.header-links a:hover {
+    color: rgb(213,32,39,255);
 }
 .header-phone a{
     color: white;
@@ -31,6 +36,10 @@ header {
     font-family: Jost;
     font-size: 30px;
     font-weight: 600;
+    transition: ease 400ms;
+}
+.header-phone a:hover, .footer__phone:hover {
+    color: rgb(213,32,39,255);
 }
 
 .intro-page {
@@ -153,6 +162,11 @@ header {
     margin-inline: 20px;
 }
 .trainers__photo {
+    transition: ease 400ms;
+    cursor: pointer;
+}
+.trainers__photo:hover {
+    transform: scale(1.03);
 }
 .trainers__name {
     margin-top: 15px;
@@ -170,6 +184,10 @@ header {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    transition: ease 500ms;
+}
+.trainers__button:hover {
+    transform: scale(1.15);
 }
 
 .bundles {
@@ -192,6 +210,11 @@ header {
     height: 450px;
     width: 360px;
     margin-right: 30px;
+    transition: ease 400ms;
+}
+.bundles__block:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.048);
 }
 .bundles__name {
     margin-top: 40px;
@@ -219,6 +242,12 @@ header {
     background-color: rgb(213,32,39,255);
     border: none;
     cursor: pointer;
+    transition: all 500ms ease;
+}
+.bundles__button:hover {
+    background: rgb(255, 255, 255);
+	color: rgb(213,32,39,255);
+	box-shadow: inset 0 0 0 3px rgb(213,32,39,255);
 }
 
 .course-inline {
@@ -263,6 +292,11 @@ header {
     background-color: black;
     color: white;
     font-size: 18px;
+    transition: ease 500ms;
+}
+.course__forms button:hover {
+    background-color: white;
+    color: rgb(213,32,39,255);
 }
 
 footer {
@@ -284,4 +318,5 @@ footer {
     font-weight: 600;
     font-size: 30px;
     color: white;
+    transition: ease 400ms;
 }
