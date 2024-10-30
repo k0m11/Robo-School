@@ -89,8 +89,8 @@ header {
 	box-shadow: inset 0 0 0 3px rgb(213,32,39,255);
 }
 .inline-space {
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .stats-page {
@@ -200,6 +200,7 @@ header {
 .bundles__parts {
     margin-top: 80px;
     display: flex;
+    justify-content: space-between;
 }
 .bundles__block {
     border: solid;
@@ -250,7 +251,9 @@ header {
 	box-shadow: inset 0 0 0 3px rgb(213,32,39,255);
 }
 
-.course-inline {
+.course {
+    position: relative;
+    color: white;
     font-family: Jost;
     position: relative;
     padding-top: 100px;
@@ -259,12 +262,18 @@ header {
     justify-content: center;
     background-color: rgb(213,32,39,255);
 }
-.course {
-    color: white;
-    display: flex;
-}
 .course__text {
     margin-right: 150px;
+}
+.course__background {
+    position: absolute;
+    bottom: 0;
+    font-size: 160px;
+    color: rgba(255, 65, 65, 0.548);
+    z-index: 0;
+    overflow: hidden;
+    height: 140px;
+    font-weight: 900;
 }
 .course__text h1 {
     font-size: 36px;
@@ -293,6 +302,8 @@ header {
     color: white;
     font-size: 18px;
     transition: ease 500ms;
+    position: relative;
+    z-index: 10;
 }
 .course__forms button:hover {
     background-color: white;
